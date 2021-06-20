@@ -1,20 +1,20 @@
-import React, { forwardRef, ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 
 interface Props {
-  children?: ReactNode;
+  children: ReactNode;
   title?: string | '';
 }
 
-const Page = forwardRef<HTMLDivElement, Props>(({ children, title = '', ...rest }, ref) => (
-  <div ref={ref} {...rest}>
+const Page: React.FC<Props> = ({ children, title }) => (
+  <>
     <Helmet>
       <title>{title}</title>
     </Helmet>
     {children}
-  </div>
-));
+  </>
+);
 
 Page.propTypes = {
   children: PropTypes.node.isRequired,

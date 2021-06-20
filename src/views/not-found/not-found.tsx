@@ -1,5 +1,5 @@
 import React from 'react';
-import Page from 'src/components/page';
+import Page from '@/components/Page/Page';
 
 const NotFound = () => (
   <Page title="404 | Not Found">

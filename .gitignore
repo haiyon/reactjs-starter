@@ -28,5 +28,7 @@ yarn-error.log*
 
 /src/generated/*
 
+.husky
+
 yarn.lock
 .eslintcache

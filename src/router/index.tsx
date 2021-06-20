@@ -1,8 +1,8 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-import MainLayout from '../layouts';
 
-import { Welcome as WelcomeView, NotFound as NotFoundView } from '../views';
+import { Welcome as WelcomeView, NotFound as NotFoundView } from '@/views';
+import MainLayout from '@/layouts/Main/Main';
 
 const routes = [
   // {

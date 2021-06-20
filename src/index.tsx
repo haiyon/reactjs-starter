@@ -4,7 +4,7 @@ import { BrowserRouter, useRoutes } from 'react-router-dom';
 import routes from './router';
 
 import 'react-perfect-scrollbar/dist/css/styles.css';
-import './assets/scss/app.scss';
+import './assets/styles/app.css';
 
 import reportWebVitals from './reportWebVitals';
 
