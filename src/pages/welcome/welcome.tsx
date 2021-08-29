@@ -1,7 +1,7 @@
 import React from 'react';
 
 import logo from '@/assets/logo.svg';
-import Page from '@/components/Page/Page';
+import Page from '@/components/page';
 
 interface Props {}
 

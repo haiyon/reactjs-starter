@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { ReactNode } from 'react';
 
-import Title from '@/components/Page/Title';
+import Title from '@/components/page/title';
 
 interface Props {
   children: ReactNode;

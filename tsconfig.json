@@ -16,22 +16,16 @@
     "jsx": "react",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "#/*": ["types/*"]
+      "@/*": ["src/*"]
     }
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "types/**/*.ts",
-    "types/**/*.d.ts",
-    "vite.config.ts"
+    "**/*.ts",
+    "**/*.tsx",
+    "package.json"
   ],
   "exclude": [
     "node_modules",
-    "dist",
-    "**/*.js"
+    "dist"
   ]
 }
