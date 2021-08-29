@@ -1,4 +1,6 @@
 import loadable from '@loadable/component';
+import React from 'react';
+import { Redirect } from 'react-router';
 import { RouteConfig } from 'react-router-config';
 
 // Layout
@@ -22,7 +24,10 @@ const routes: RouteConfig[] = [
       {
         path: '/',
         component: MainLayout,
-        routes: [{ path: '/welcome', component: loadable(() => import('@/pages/welcome/welcome')) }]
+        routes: [
+          { path: '/welcome', component: loadable(() => import('@/pages/welcome/welcome')) },
+          { path: '/', render: () => <Redirect to="/welcome" /> }
+        ]
       },
       ...basicRoutes
     ]
